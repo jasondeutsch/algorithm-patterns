@@ -7,10 +7,12 @@
 ---
 
 
-## Who hates leetcode?
-
+#### Who hates leetcode?
+![](./img/dogs_cat.jpg)
 
 ---
+
+
 
 #### Algorithm Pattern:  a method, strategy, or technique of solving a problem.
 
@@ -99,12 +101,26 @@ TODO
 ### General Idea
 TODO
 
+---
+
+### What is a window?
+A contiguouss subsequence of a sequental structure.
+
 There are different kinds of sliding windows, we're going to look fixed window.
 
 ---
-### What is a window?
-A contiguouss subsequence of a sequental structure.
-(add pictures)
+
+#### What is a window
+![](./img/slide_window_1.png)
+
+
+---
+
+
+##### Key Insight
+![](./img/sliding_window_2.png)
+
+
 
 ---
 
@@ -153,9 +169,9 @@ Use two pointers which move through some sequential  data structure at different
 Handling cycles in a linked list or arrays
 
 ---
+#### A cycle in a linked list
 
-
-<img src="./img/linked-list-cycle.png" width="2000"/>
+<img src="./img/linked-list-cycle.png" width="1000"/>
 
 ---
 
@@ -183,7 +199,7 @@ Overlapping intervals
 
 ## Six Cases
 
-----
+----	
 
 ![merge_intervals_1](./img/merge_intervals_1.png)
 

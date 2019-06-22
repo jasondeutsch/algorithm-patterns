@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa4e443f-8844-4956-a71d-0bff5bce1041" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fast_slow/challenges.go" beforeDir="false" afterPath="$PROJECT_DIR$/fast_slow/challenges.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/merge_intervals/challenges.go" beforeDir="false" afterPath="$PROJECT_DIR$/merge_intervals/challenges.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/merge_intervals/solutions.go" beforeDir="false" afterPath="$PROJECT_DIR$/merge_intervals/solutions.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/patterns 1.md" beforeDir="false" afterPath="$PROJECT_DIR$/patterns 1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slide_window/challenges.go" beforeDir="false" afterPath="$PROJECT_DIR$/slide_window/challenges.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/two_pointers/challenges.go" beforeDir="false" afterPath="$PROJECT_DIR$/two_pointers/challenges.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
