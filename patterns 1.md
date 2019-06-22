@@ -4,37 +4,55 @@
 
 # Algorithm Patterns: Part 1
 
+---
 
+
+## Who hates leetcode?
+
+
+---
 
 #### Algorithm Pattern:  a method, strategy, or technique of solving a problem.
 
 ---
 
-### square a list
-
-#### specific solution
-
-```go
-for i := 0; i < len(arr)-1; i++ {
-  arr[i] *= 2
-}
-```
+# we are conditioned to look for complicated solutions
 
 ---
 
+## Patterns
+* two pointers
+* sliding window
+* fast and slow pointers
+* merge intervals
+* in place linked list traversal
+* cyclic sort
+* tree breadth first search
+* tree depth first searh
+* two heaps
 
-#### general solution
+---
 
-Apply some function to each thing
+## Patterns continued
+* subsets
+* modified binary search
+* top elements
+* knapsack
+* k way marge
+* topological sort
+* a few others...
 
 
-```haskell
-fmap :: (a -> b)-> f a -> f b
+---
 
-fmap list (*2)
-fmap list (\x -> x*x)
-fmap...
-```
+## What we'll cover (hopefully!)
+* two pointers
+* sliding window
+* fast and slow pointers
+* merge intervals
+---
+
+## Personal story
 
 ---
 
@@ -42,7 +60,7 @@ fmap...
 
 ### One Liner
 
-An efficient techniquefor for searching pairs in sorted arrays.
+An efficient technique for searching pairs in sorted arrays.
 
 ---
 ## Pattern 1: Two Pointers
@@ -50,7 +68,7 @@ An efficient techniquefor for searching pairs in sorted arrays.
 
 ### General Idea
 
-Use two pointers, representing the first and last element, and add the values together. If the result matches the predicate then you done. If the sum is to high, decrement the end pointer, if the sum is to low, increment the start pointer.
+Use two pointers, representing the first and last element and add the values together. If the result matches the predicate then you done. If the sum is to high, decrement the end pointer, if the sum is to low, increment the start pointer.
 
 ---
 ## Pattern 1: Two Pointers
@@ -58,24 +76,35 @@ Use two pointers, representing the first and last element, and add the values to
 
 ### Identifying
 
-Sorted array/linked list
+Sorted array
 
 Calculate something of a given size
 
 
+---
 
+## Pattern 2: Sliding Window
 ---
 
 ## Pattern 2: Sliding Window
 
 ### One Liner
 
-A nested loop can be re-written as a single loop in some problems
+TODO
 
 ---
 
 ## Pattern 2: Sliding Window
+
 ### General Idea
+TODO
+
+There are different kinds of sliding windows, we're going to look fixed window.
+
+---
+### What is a window?
+A contiguouss subsequence of a sequental structure.
+(add pictures)
 
 ---
 
@@ -85,9 +114,17 @@ A nested loop can be re-written as a single loop in some problems
 
 You have an ordered container (array, string, et cetera)
 
-You need to findsome specificy type of sub sequence that satisfies some condition
+You need to find some specific type of sub sequence that satisfies some condition
 
 A O(n^2) is available
+
+A nested loop can be re-written as a single loop in some problems
+
+----
+
+
+## Pattern 3: Fast and Slow Pointers
+
 
 ----
 
@@ -117,6 +154,11 @@ Handling cycles in a linked list or arrays
 
 ---
 
+
+<img src="./img/linked-list-cycle.png" width="2000"/>
+
+---
+
 ## Pattern 4: Merge Intervals
 
 ### One Liner
@@ -143,29 +185,30 @@ Overlapping intervals
 
 ----
 
-![merge_intervals_1](/Users/jason/go/src/algorithm-patterns/img/merge_intervals_1.png)
+![merge_intervals_1](./img/merge_intervals_1.png)
 
 ---
 
-![merge_intervals_2](/Users/jason/go/src/algorithm-patterns/img/merge_intervals_2.png)
+![merge_intervals_2](./img/merge_intervals_2.png)
 
 ---
 
-![merge_intervals_3](/Users/jason/go/src/algorithm-patterns/img/merge_intervals_3.png)
+![merge_intervals_3](./img/merge_intervals_3.png)
 
 ---
 
-![merge_intervals_4](/Users/jason/go/src/algorithm-patterns/img/merge_intervals_4.png)
+![merge_intervals_4](./img/merge_intervals_4.png)
 
 ---
 
-![merge_intervals_5](/Users/jason/go/src/algorithm-patterns/img/merge_intervals_5.png)
+![merge_intervals_5](./img/merge_intervals_5.png)
 
 ---
 
 
 
-![merge_intervals_6](/Users/jason/go/src/algorithm-patterns/img/merge_intervals_6.png)
+![merge_intervals_6](./img/merge_intervals_6.png)
 
 ---
 
+## Find The Pattern

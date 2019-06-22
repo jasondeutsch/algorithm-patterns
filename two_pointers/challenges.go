@@ -2,13 +2,20 @@ package two_pointers
 
 import "fmt"
 
-/*
-Problem: Target Sum Pair
-*/
+/*******************************
+
+Find two indexes whos values equal target sum
+
+*******************************/
 func TargetSumPair(nums []int, target int) []int {
 	return []int{}
 }
 
+/*******************************
+
+//todo
+
+*******************************/
 func TargetSumPairs(nums []int, target int) [][]int {
 	var pair [][]int
 	return pair
@@ -28,11 +35,12 @@ func TargetSumPairHash(nums []int, target int) []int {
 	return []int{}
 }
 
-/*
-Problem: Triplet Sum
-*/
-
 // TODO check for improvements
+/*******************************
+
+//todo
+
+*******************************/
 func TargetSumTriplets(nums []int, target int) [][]int {
 	triplets := [][]int{}
 	numsMap := make(map[int]int)

@@ -14,21 +14,23 @@ func sumSubBrute(k int, arr []int) []int {
 	return result
 }
 
+/*******************************
+
+return an array of two indexes which
+have a sum equal to k.
+
+*******************************/
 func sumSub(k int, arr []int) []int {
-	var result []int
-	start, sum := 0, 0
-	for end := 0; end < len(arr); end++ {
-		sum += arr[end]
-		if end >= k-1 {
-			result = append(result, sum)
-			sum -= arr[start]
-			start++
-		}
-	}
-	return result
+	return []int{}
 }
 
 
+/*******************************
+
+Find the longest subtring with
+K distinct characters.
+
+*******************************/
 func longestSubStringKDistinct(k int, str string) string {
 	frequency := make(map[rune]int)
 	max, distinct, start := "", 0, 0
@@ -57,6 +59,11 @@ func longestSubStringKDistinct(k int, str string) string {
 	return string(max)
 }
 
+/*******************************
+
+// TODO
+
+*******************************/
 func longestUniqueSubString(str string) string {
 	indexes := make(map[rune]int)
 	longest,  start := "", 0
