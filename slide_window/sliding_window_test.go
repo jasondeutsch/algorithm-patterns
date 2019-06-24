@@ -1,7 +1,6 @@
 package slide_window
 
 import (
-	"study/test_helpers"
 	"testing"
 )
 
@@ -10,8 +9,8 @@ func TestSumSubBrute(t *testing.T) {
 	ints := []int{1,2,3,4,5,6,7,8,9,10}
 	expected := []int{15, 20, 25, 30, 35, 40}
 	got := sumSubBrute(5, ints)
-	if !test_helpers.IntSliceEquals(got,expected) {
-		t.Errorf(test_helpers.FailString(got, expected))
+	if !IntSliceEquals(got,expected) {
+		t.Errorf("Error:\n Got: got\n Expected:expected", got, expected)
 	}
 }
 
@@ -19,8 +18,8 @@ func TestSumSub(t *testing.T) {
 	ints := []int{1,2,3,4,5,6,7,8,9,10}
 	expected := []int{15, 20, 25, 30, 35, 40}
 	got := sumSub(5, ints)
-	if !test_helpers.IntSliceEquals(got, expected) {
-		t.Errorf(test_helpers.FailString(got, expected))
+	if !IntSliceEquals(got, expected) {
+		t.Errorf("Error:\n Got: got\n Expected:expected", got, expected)
 	}
 }
 
@@ -29,14 +28,14 @@ func TestLongestSubStringKDistinct(t *testing.T) {
 	expected := "eefffe"
 	got := longestSubStringKDistinct(2, str)
 	if got != expected  {
-		t.Errorf(test_helpers.FailString(got, expected))
+		t.Errorf("Error:\n Got: got\n Expected:expected", got, expected)
 	}
 
 	str = "aarrbcdee"
 	expected = "aarr"
 	got = longestSubStringKDistinct(2, str)
 	if got != expected  {
-		t.Errorf(test_helpers.FailString(got, expected))
+		t.Errorf("Error:\n Got: got\n Expected:expected", got, expected)
 	}
 }
 
@@ -46,7 +45,18 @@ func TestLongestUniqueSubString(t *testing.T) {
 	expected := "kdjflas"
 	got := longestUniqueSubString(str)
 	if got != expected {
-		t.Error(test_helpers.FailString(got, expected))
+		t.Errorf("Error:\n Got: got\n Expected:expected", got, expected)
 	}
+}
 
+func IntSliceEquals(a,b []int) bool {
+	if len(a) != len (b) {
+		return false
+	}
+	for i := range a {
+		if a[i] != b[i]  {
+			return false
+		}
+	}
+	return true
 }

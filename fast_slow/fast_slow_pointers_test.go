@@ -1,7 +1,6 @@
 package fast_slow
 
 import (
-	"study/test_helpers"
 	"testing"
 )
 
@@ -16,7 +15,7 @@ func TestDetectCycle(t *testing.T) {
 	n.next.next.next.next.next.next = n.next.next.next
 
 	if got := DetectCycle(n); got != expected {
-		t.Error(test_helpers.FailString(got, expected))
+		t.Errorf("Error:\n Got: got\n Expected:expected", got, expected)
 	}
 }
 
@@ -31,6 +30,6 @@ func TestCycleLength(t *testing.T) {
 	n.next.next.next.next.next.next = n.next.next
 
 	if got := CycleLength(n); got != expected {
-		t.Error(test_helpers.FailString(got, expected))
+		t.Errorf("Error:\n Got: got\n Expected:expected", got, expected)
 	}
 }

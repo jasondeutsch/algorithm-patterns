@@ -1,7 +1,6 @@
 package merge_intervals
 
 import (
-	"study/test_helpers"
 	"testing"
 )
 
@@ -20,7 +19,7 @@ func TestMergeSolution(t *testing.T) {
 	got :=  MergeSolution(intervals)
 	for i := range got {
 		if got[i].Start != expected[i].Start || got[i].End != expected[i].End {
-			t.Error(test_helpers.FailString(got, expected))
+			t.Errorf("Error:\n Got: got\n Expected:expected", got, expected)
 		}
 	}
 

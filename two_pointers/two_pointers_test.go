@@ -1,7 +1,7 @@
 package two_pointers
 
 import (
-	"study/test_helpers"
+	"study/patterns/test_helpers"
 	"testing"
 )
 
@@ -11,7 +11,7 @@ func TestTargetSumPair(t *testing.T) {
 	expected := []int{0, 5}
 	got := TargetSumPair(nums, target)
 	if len(got) != 2 || got[0] != expected[0] || got[1] != expected[1] {
-		t.Error(test_helpers.FailString(got, expected))
+		t.Errorf("Error:\n Got: got\n Expected:expected", got, expected)
 	}
 }
 
@@ -23,7 +23,7 @@ func TestTargetSumPairs(t *testing.T) {
 	if len(got) != 3 || got[0][0] != expected[0][0] || got[0][1] != expected[0][1] ||
 		got[1][0] != expected[1][0] || got[1][1] != expected[1][1] ||
 		got[2][0] != expected[2][0] || got[2][1] != expected[2][1] {
-		t.Error(test_helpers.FailString(got, expected))
+		t.Errorf("Error:\n Got: got\n Expected:expected", got, expected)
 	}
 }
 
@@ -33,7 +33,7 @@ func TestTargetSumPairHAsh(t *testing.T) {
 	expected := []int{2, 3}
 	got := TargetSumPairHash(nums, target)
 	if len(got) != 2 || got[0] != expected[0] || got[1] != expected[1] {
-		t.Error(test_helpers.FailString(got, expected))
+		t.Errorf("Error:\n Got: got\n Expected:expected", got, expected)
 	}
 }
 
