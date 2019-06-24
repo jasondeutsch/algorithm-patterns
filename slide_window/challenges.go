@@ -35,6 +35,7 @@ func longestSubStringKDistinct(k int, str string) string {
 	frequency := make(map[rune]int)
 	max, distinct, start := "", 0, 0
 	for i, c := range str {
+		printWindow(start,i,len(str))
 		// frequency accounting
 		frequency[c]++
 		if frequency[c] == 1 {

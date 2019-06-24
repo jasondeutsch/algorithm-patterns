@@ -1,7 +1,7 @@
 package slide_window
 
 import (
-	"algorithm-patterns/test_helpers"
+	"study/test_helpers"
 	"testing"
 )
 

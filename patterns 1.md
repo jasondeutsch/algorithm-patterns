@@ -8,10 +8,16 @@
 
 
 #### Who hates leetcode?
-![](./img/dogs_cat.jpg)
+![](img/dogs_cat.jpg)
 
 ---
 
+![](img/intro-2.png)
+
+
+<sup> source: https://www.nomachetejuggling.com/2014/06/24/the-worst-programming-interview-question/ </sup>
+
+---
 
 
 #### Algorithm Pattern:  a method, strategy, or technique of solving a problem.
@@ -36,13 +42,13 @@
 ---
 
 ## Patterns continued
-* subsets
+* subsets	
 * modified binary search
 * top elements
 * knapsack
 * k way marge
 * topological sort
-* a few others...
+* a few others...(string balancing, etc)
 
 
 ---
@@ -92,14 +98,30 @@ Calculate something of a given size
 
 ### One Liner
 
-TODO
+Dynamicaly expand the end and contract the the start of a subsequence during iteration, while never evaluating the index twice. 
+
+
+---
+### One Liner
+
+Dynamicaly expand the end and contract the the start of a subsequence during iteration, while never evaluating the index twice. 
+
+(not as complex at sounds)
 
 ---
 
 ## Pattern 2: Sliding Window
 
 ### General Idea
-TODO
+start with two pointers (index variables) to the start of an array or list)
+Consider these as "start and end"
+increment end variable until some condition met.
+Process values as you go.
+When condition met
+* add result to result set
+* remove the start index's value
+* increment start
+
 
 ---
 
@@ -111,14 +133,14 @@ There are different kinds of sliding windows, we're going to look fixed window.
 ---
 
 #### What is a window
-![](./img/slide_window_1.png)
+![](img/slide_window_1.png)
 
 
 ---
 
 
 ##### Key Insight
-![](./img/sliding_window_2.png)
+![](img/sliding_window_2.png)
 
 
 
@@ -166,12 +188,14 @@ Use two pointers which move through some sequential  data structure at different
 ## Pattern 3: Fast and Slow Pointers
 ### Identifying
 
-Handling cycles in a linked list or arrays
+Handling cycles in a linked list or array
 
 ---
 #### A cycle in a linked list
 
 <img src="./img/linked-list-cycle.png" width="1000"/>
+
+image:	 hackkerrank.com
 
 ---
 
@@ -184,8 +208,14 @@ Handling cycles in a linked list or arrays
 
 ## Pattern 4: Merge Intervals
 
-### General Idea
+### General Idea (double check)
 
+1. Sort the Intervals based on the increasing order of start time
+
+2. Push the first interval on to a result set
+
+3. If the current interval does not overlap with the stack top, push it
+If the current element overlaps with stack top and ending time of current interval is more     than that of stack top, update stack top with the ending time of current interval
 ---
 
 ## Pattern 4: Merge Intervals
@@ -194,36 +224,35 @@ Handling cycles in a linked list or arrays
 Overlapping intervals
 
 
-
 ----
 
 ## Six Cases
 
 ----	
 
-![merge_intervals_1](./img/merge_intervals_1.png)
+![merge_intervals_1](img/merge_intervals_1.png)
 
 ---
 
-![merge_intervals_2](./img/merge_intervals_2.png)
+![merge_intervals_2](img/merge_intervals_2.png)
 
 ---
 
-![merge_intervals_3](./img/merge_intervals_3.png)
+![merge_intervals_3](img/merge_intervals_3.png)
 
 ---
 
-![merge_intervals_4](./img/merge_intervals_4.png)
+![merge_intervals_4](img/merge_intervals_4.png)
 
 ---
 
-![merge_intervals_5](./img/merge_intervals_5.png)
+![merge_intervals_5](img/merge_intervals_5.png)
 
 ---
 
 
 
-![merge_intervals_6](./img/merge_intervals_6.png)
+![merge_intervals_6](img/merge_intervals_6.png)
 
 ---
 

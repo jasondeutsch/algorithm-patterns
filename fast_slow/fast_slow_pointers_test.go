@@ -1,7 +1,7 @@
 package fast_slow
 
 import (
-	"algorithm-patterns/test_helpers"
+	"study/test_helpers"
 	"testing"
 )
 

@@ -15,4 +15,5 @@ Output: [[1,7][8,9]]
 
 func MergeIntervals(intervals [][]int) [][]int{
 
+	return [][]int{}
 }
