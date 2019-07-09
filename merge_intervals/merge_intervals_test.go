@@ -6,22 +6,47 @@ import (
 
 func TestMergeSolution(t *testing.T) {
 	intervals := []Interval{
-		Interval{1,6},
-		Interval{2,7},
-		Interval{8,9},
+		{1, 6},
+		{2, 7},
+		{8, 9},
 	}
 
 	expected := []Interval{
-		Interval{1,7},
-		Interval{8,9},
+		{1, 7},
+		{8, 9},
 	}
 
-	got :=  MergeSolution(intervals)
+	got := MergeSolution(intervals)
 	for i := range got {
 		if got[i].Start != expected[i].Start || got[i].End != expected[i].End {
-			t.Errorf("Error:\n Got: got\n Expected:expected", got, expected)
+			t.Errorf("Error:\n Got: %v\n Expected: %v", got, expected)
 		}
 	}
+}
 
+func TestMaxDisjointIntervals(t *testing.T) {
+	// input: [[1,4], [7,11],[7,9],[9,10],[2,3], [4,5]]
+	// output: [[2,3],[4,5],[7,9]]
+	input := []Interval{
+		{1, 4},
+		{7, 11},
+		{7, 9},
+		{9, 10},
+		{2, 3},
+		{4, 5},
+	}
+	expected := []Interval{
+		{2, 3},
+		{4, 5},
+		{7, 9},
+		{9, 10},
+	}
 
+	got := MaxDisjointIntervals(input)
+	for i := range got {
+		if got[i].Start != expected[i].Start ||
+			got[i].End != expected[i].End {
+			t.Errorf("Error:\n Got: %v\n Expected: %v", got, expected)
+		}
+	}
 }

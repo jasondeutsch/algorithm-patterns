@@ -13,6 +13,15 @@ func detectCycleSolution(n *node) bool {
 	return false
 }
 
+/****
+
+
+
+
+
+
+
+ */
 func cycleLengthSolution(head *node) int {
 	fast, slow := head, head
 	for fast != nil && fast.next != nil {

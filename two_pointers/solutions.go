@@ -9,6 +9,7 @@ func TargetSumPairSolution(nums []int, target int) []int {
 	var pair []int
 	i, j := 0, len(nums)-1
 	for i != j {
+		PrintTwoPointers(i, j, len(nums))
 		sum := nums[i] + nums[j]
 		if sum > target {
 			j--
@@ -82,4 +83,3 @@ func TargetSumTripletsSolution(nums []int, target int) [][]int {
 	}
 	return triplets
 }
-

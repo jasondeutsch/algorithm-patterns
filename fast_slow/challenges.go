@@ -13,6 +13,16 @@ Does a given linked list contain a cycle?
 
 *******************************/
 func DetectCycle(n *node) bool {
+	slow, fast := n, n
+
+	for  fast != nil && fast.next != nil {
+		if fast == slow{
+			return true
+		}
+		slow = slow.next
+		fast = fast.next.next
+	}
+
 	return false
 }
 

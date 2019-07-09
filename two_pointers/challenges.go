@@ -1,14 +1,17 @@
 package two_pointers
 
-import "fmt"
+import (
+	"fmt"
+)
 
 /*******************************
 
 Find two indexes whos values equal target sum
 
 *******************************/
-func TargetSumPair(nums []int, target int) []int {
-	return []int{}
+func TargetSumPair(nums []int, target int) [][]int {
+	res := [][]int{}
+	return res
 }
 
 /*******************************
